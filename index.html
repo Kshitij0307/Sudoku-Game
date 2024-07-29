@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Sudoku</h1>
+        <div class="play">
+            <img src="play.jpg" alt="play" id="playImg">
+        </div>
+        <div class="game">
+                
+                <div class="row" id="r0">
+                    <div class="box" id="0"></div>
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box" id="4"></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+                </div>
+                <div class="row" id="r1">
+                    <div class="box" id="9"></div>
+                    <div class="box" id="10"></div>
+                    <div class="box" id="11"></div>
+                    <div class="box" id="12"></div>
+                    <div class="box" id="13"></div>
+                    <div class="box" id="14"></div>
+                    <div class="box" id="15"></div>
+                    <div class="box" id="16"></div>
+                    <div class="box" id="17"></div>
+                </div>
+                <div class="row" id="r2">
+                    <div class="box" id="18"></div>
+                    <div class="box" id="19"></div>
+                    <div class="box" id="20"></div>
+                    <div class="box" id="21"></div>
+                    <div class="box" id="22"></div>
+                    <div class="box" id="23"></div>
+                    <div class="box" id="24"></div>
+                    <div class="box" id="25"></div>
+                    <div class="box" id="26"></div>
+                </div>
+                <div class="row" id="r3">
+                    <div class="box" id="27"></div>
+                    <div class="box" id="28"></div>
+                    <div class="box" id="29"></div>
+                    <div class="box" id="30"></div>
+                    <div class="box" id="31"></div>
+                    <div class="box" id="32"></div>
+                    <div class="box" id="33"></div>
+                    <div class="box" id="34"></div>
+                    <div class="box" id="35"></div>
+                </div>
+                <div class="row" id="r4">
+                    <div class="box" id="36"></div>
+                    <div class="box" id="37"></div>
+                    <div class="box" id="38"></div>
+                    <div class="box" id="39"></div>
+                    <div class="box" id="40"></div>
+                    <div class="box" id="41"></div>
+                    <div class="box" id="42"></div>
+                    <div class="box" id="43"></div>
+                    <div class="box" id="44"></div>
+                </div>
+                <div class="row" id="r5">
+                    <div class="box" id="45"></div>
+                    <div class="box" id="46"></div>
+                    <div class="box" id="47"></div>
+                    <div class="box" id="48"></div>
+                    <div class="box" id="49"></div>
+                    <div class="box" id="50"></div>
+                    <div class="box" id="51"></div>
+                    <div class="box" id="52"></div>
+                    <div class="box" id="53"></div>
+                </div>
+                <div class="row" id="r6">
+                    <div class="box" id="54"></div>
+                    <div class="box" id="55"></div>
+                    <div class="box" id="56"></div>
+                    <div class="box" id="57"></div>
+                    <div class="box" id="58"></div>
+                    <div class="box" id="59"></div>
+                    <div class="box" id="60"></div>
+                    <div class="box" id="61"></div>
+                    <div class="box" id="62"></div>
+                </div>
+                <div class="row" id="r7">
+                    <div class="box" id="63"></div>
+                    <div class="box" id="64"></div>
+                    <div class="box" id="65"></div>
+                    <div class="box" id="66"></div>
+                    <div class="box" id="67"></div>
+                    <div class="box" id="68"></div>
+                    <div class="box" id="69"></div>
+                    <div class="box" id="70"></div>
+                    <div class="box" id="71"></div>
+                </div>
+                <div class="row" id="r8">
+                    <div class="box" id="72"></div>
+                    <div class="box" id="73"></div>
+                    <div class="box" id="74"></div>
+                    <div class="box" id="75"></div>
+                    <div class="box" id="76"></div>
+                    <div class="box" id="77"></div>
+                    <div class="box" id="78"></div>
+                    <div class="box" id="79"></div>
+                    <div class="box" id="80"></div>
+                </div>
+                
+        </div>
+        <div class="controller">
+            <div class="scoreboard">
+                <div class="mistakes">
+                    Mistakes:0/3
+                </div>
+                <div class="score">
+                    Score:0
+                </div>
+                <div class="timer">
+                    <p>00:00</p>
+                    <img src="pause.jpg" alt="pause">
+                </div>
+            </div>
+            <div class="numpad">
+                <div class="editButtons">
+                    <div class="edit" id="undo">Undo</div>
+                    <div class="edit" id="erase">Erase</div>
+                    <div class="edit" id="help">
+                        <p>Help</p>
+                        <p id="count">(3)</p>
+                    </div>
+                </div>
+                <div class="numbers">
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                </div>
+                <div class="newGameButton">
+                    <div class="newGame">New Game</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="difficultyModal">
+        <div class="dmodal-content">
+            <span class="dclose-button">&times;</span>
+            <p>Select Difficulty</p>
+            <div class="dropdown">
+                <select  id="dropdown-list">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <button id="submitDiffBtn">Submit</button>
+        </div>
+    </div>
+    <div id="gameFinishedModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="finished.jpg" alt="Game over" id="finishedImage">
+            <button id="startNewGameButton">Start New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
