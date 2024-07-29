@@ -2,7 +2,6 @@
 Sudoku Game - A feature-rich Sudoku game built with JavaScript, including puzzle generation, solving algorithms, score tracking, mistake handling, hints, and a timer. Enjoy an interactive UI with dynamic updates and difficulty selection. Play, pause, and reset the game seamlessly for an engaging user experience.
 
 Key Features:
-Detailed Analysis:
 
 => Puzzle Generation and Solving: The game fetches a new puzzle from an API based on the selected difficulty. It uses a backtracking algorithm to solve the puzzle and ensure the solution is correct.
 
